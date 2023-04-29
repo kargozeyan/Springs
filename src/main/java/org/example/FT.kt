@@ -26,11 +26,7 @@ class FT(x: DoubleArray) {
         }
     }
 
-    fun amplitudes(): DoubleArray {
-        val amplitudes = DoubleArray(x.size)
-        for (k in x.indices) {
-            amplitudes[k] = sqrt(yR[k].pow(2) + yI[k].pow(2))
-        }
-        return amplitudes
-    }
+    fun amplitudes() = (0..x.lastIndex).map {
+        (yR[it].pow(2) + yI[it].pow(2))
+    }.toDoubleArray()
 }
