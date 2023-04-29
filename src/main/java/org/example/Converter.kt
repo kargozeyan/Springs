@@ -1,7 +1,7 @@
 package org.example
 
 abstract class Converter {
-    abstract fun convertToSprings(binary: String): String
+    abstract fun convertToSprings(binary: String): Spring
 
     fun computeOscillations(
         expr: String,
