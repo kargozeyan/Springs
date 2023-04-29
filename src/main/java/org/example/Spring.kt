@@ -34,4 +34,8 @@ class Spring() {
 
         return coordinates.toDoubleArray()
     }
+
+    fun inSeries(that: Spring) = Spring((this.k * that.k) / (this.k + that.k))
+
+    fun inParallel(that: Spring) = Spring(this.k + that.k)
 }
