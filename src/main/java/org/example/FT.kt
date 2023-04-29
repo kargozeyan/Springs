@@ -3,7 +3,6 @@ package org.example
 import kotlin.math.cos
 import kotlin.math.pow
 import kotlin.math.sin
-import kotlin.math.sqrt
 
 
 class FT(x: DoubleArray) {

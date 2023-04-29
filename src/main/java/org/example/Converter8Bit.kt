@@ -1,10 +1,5 @@
 package org.example
 
-import java.lang.IllegalArgumentException
-import kotlin.math.PI
-import kotlin.math.max
-import kotlin.math.pow
-
 class Converter8Bit : ConverterInt() {
     override fun convertToSprings(binary: String): String {
         if (binary.length != 8) {
